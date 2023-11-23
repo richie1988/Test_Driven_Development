@@ -11,7 +11,22 @@ describe Solver do
     let(:solver) { Solver.new }
 
     describe '#factorial' do
-      # test
+      it 'is a valid method' do
+        expect(solver.respond_to?(:factorial)).to be(true)
+      end
+
+      it 'returns 1 for factorial of 0' do
+        expect(solver.factorial(0)).to eq(1)
+      end
+
+      it 'returns the factorial for positive numbers' do
+        expect(solver.factorial(1)).to eq(1)
+        expect(solver.factorial(10)).to eq(3_628_800)
+      end
+
+      it 'raises an exception for negative numbers' do
+        expect { solver.factorial(-2) }.to raise_error('NegativeNumber')
+      end
     end
 
     describe '#reverse' do
