@@ -3,20 +3,22 @@
 This project demonstrates Test Driven Development (TDD) using RSpec for testing. The main objective is to create a class called `Solver` with specific methods, adhering to the given requirements.
 
 ## Table of Contents
-  - [Built With](#built-with)
-  - [Tech Stack](#tech-stack)
-  - [Key Features](#key-features)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-  - [Usage](#usage)
-  - [Author](#author)
-  - [Future Features](#future-features)
-  - [Contributing](#contributing)
-  - [Show your support](#show-your-support)
-  - [Acknowledgements](#acknowledgements)
-  - [License](#license)
+- [Test Driven Development Project](#test-driven-development-project)
+  - [Table of Contents](#table-of-contents)
+  - [Built With ](#built-with-)
+  - [Tech Stack ](#tech-stack-)
+  - [Key Features ](#key-features-)
+  - [Getting Started ](#getting-started-)
+    - [Prerequisites ](#prerequisites-)
+    - [Setup ](#setup-)
+    - [Install ](#install-)
+  - [Usage ](#usage-)
+  - [Authors ](#authors-)
+  - [Future Features ](#future-features-)
+  - [Contributing ](#contributing-)
+  - [Show your support ](#show-your-support-)
+  - [Acknowledgements ](#acknowledgements-)
+  - [License ](#license-)
 
 ## Built With <a name="built-with"></a>
 - Ruby
@@ -69,4 +71,5 @@ Give a ⭐️ if you found this project interesting.
 We would like to acknowledge the contributions and support of the open-source community in making this project possible.
 
 ## License <a name="license"></a>
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.
+
+This project is licensed under the [MIT License](./LICENSE).
