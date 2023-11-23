@@ -1,4 +1,5 @@
 # solver.rb
+
 class Solver
   # Method to calculate factorial of a number N.
   # Raises an exception for negative numbers.
@@ -9,7 +10,7 @@ class Solver
     return 1 if number.zero?
 
     # Recursive case: n! = n * (n-1)!
-    n * factorial(number - 1)
+    number * factorial(number - 1)
   end
 
   # Method to reverse a given string word.
