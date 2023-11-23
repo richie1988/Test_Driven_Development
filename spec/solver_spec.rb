@@ -1,6 +1,7 @@
 # solver_spec.rb
+
 require 'rspec'
-require_relative 'solver'
+require_relative '../classes/solver'
 
 describe Solver do
   it 'is a class' do
@@ -25,7 +26,7 @@ describe Solver do
       end
 
       it 'raises an exception for negative numbers' do
-        expect { solver.factorial(-2) }.to raise_error('NegativeNumber')
+        expect { solver.factorial(-2) }.to raise_error(ArgumentError, 'Factorial is not defined for negative numbers')
       end
     end
 
@@ -44,19 +45,19 @@ describe Solver do
         expect(solver.respond_to?(:fizzbuzz)).to be(true)
       end
 
-      it 'returns when N is divisible by only 3 should return "fizz"' do
-        expect(solver.fizzbuzz(2)).to eq('fizz')
+      it 'returns "fizz" when N is divisible by only 3' do
+        expect(solver.fizzbuzz(3)).to eq('fizz')
       end
 
-      it 'returns when N is divisible by only 5 should return "buzz"' do
-        expect(solver.fizzbuzz(99)).to eq('buzz')
+      it 'returns "buzz" when N is divisible by only 5' do
+        expect(solver.fizzbuzz(5)).to eq('buzz')
       end
 
-      it 'returns when N is divisible by by both 3 and 5 should return "fizzbuzz"' do
-        expect(solver.fizzbuzz(89)).to eq('fizzbuzz')
+      it 'returns "fizzbuzz" when N is divisible by both 3 and 5' do
+        expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
       end
 
-      it 'returns when N is not divisible by either 3 or 5 should return the number itself' do
+      it 'returns the number itself when N is not divisible by either 3 or 5' do
         expect(solver.fizzbuzz(7)).to eq('7')
       end
     end
